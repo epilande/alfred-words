@@ -33,6 +33,16 @@
 				<key>vitoclose</key>
 				<false/>
 			</dict>
+			<dict>
+				<key>destinationuid</key>
+				<string>B6848C0D-806C-4F11-98AA-397EA74131B5</string>
+				<key>modifiers</key>
+				<integer>262144</integer>
+				<key>modifiersubtext</key>
+				<string>Search for "{query}" with default web search</string>
+				<key>vitoclose</key>
+				<false/>
+			</dict>
 		</array>
 		<key>93006512-872A-416F-9B89-0753FA2DF615</key>
 		<array>
@@ -43,6 +53,16 @@
 				<integer>0</integer>
 				<key>modifiersubtext</key>
 				<string></string>
+				<key>vitoclose</key>
+				<false/>
+			</dict>
+			<dict>
+				<key>destinationuid</key>
+				<string>B6848C0D-806C-4F11-98AA-397EA74131B5</string>
+				<key>modifiers</key>
+				<integer>262144</integer>
+				<key>modifiersubtext</key>
+				<string>Search for "{query}" with default web search</string>
 				<key>vitoclose</key>
 				<false/>
 			</dict>
@@ -113,94 +133,6 @@
 		<dict>
 			<key>config</key>
 			<dict>
-				<key>alfredfiltersresults</key>
-				<true/>
-				<key>alfredfiltersresultsmatchmode</key>
-				<integer>0</integer>
-				<key>argumenttreatemptyqueryasnil</key>
-				<true/>
-				<key>argumenttrimmode</key>
-				<integer>0</integer>
-				<key>argumenttype</key>
-				<integer>1</integer>
-				<key>escaping</key>
-				<integer>102</integer>
-				<key>queuedelaycustom</key>
-				<integer>3</integer>
-				<key>queuedelayimmediatelyinitially</key>
-				<true/>
-				<key>queuedelaymode</key>
-				<integer>0</integer>
-				<key>queuemode</key>
-				<integer>1</integer>
-				<key>runningsubtext</key>
-				<string></string>
-				<key>script</key>
-				<string>./words.py</string>
-				<key>scriptargtype</key>
-				<integer>1</integer>
-				<key>scriptfile</key>
-				<string></string>
-				<key>subtext</key>
-				<string></string>
-				<key>title</key>
-				<string></string>
-				<key>type</key>
-				<integer>0</integer>
-				<key>withspace</key>
-				<true/>
-			</dict>
-			<key>type</key>
-			<string>alfred.workflow.input.scriptfilter</string>
-			<key>uid</key>
-			<string>896BAE9B-3857-44CD-8386-AC44751E1758</string>
-			<key>version</key>
-			<integer>3</integer>
-		</dict>
-		<dict>
-			<key>config</key>
-			<dict>
-				<key>argumenttype</key>
-				<integer>0</integer>
-				<key>keyword</key>
-				<string>syn</string>
-				<key>subtext</key>
-				<string></string>
-				<key>text</key>
-				<string>Find synonyms for "{query}"</string>
-				<key>withspace</key>
-				<true/>
-			</dict>
-			<key>type</key>
-			<string>alfred.workflow.input.keyword</string>
-			<key>uid</key>
-			<string>BECD7A4B-8683-4A82-AD17-1F9723ECB487</string>
-			<key>version</key>
-			<integer>1</integer>
-		</dict>
-		<dict>
-			<key>config</key>
-			<dict>
-				<key>argument</key>
-				<string></string>
-				<key>passthroughargument</key>
-				<false/>
-				<key>variables</key>
-				<dict>
-					<key>word</key>
-					<string>{query}</string>
-				</dict>
-			</dict>
-			<key>type</key>
-			<string>alfred.workflow.utility.argument</string>
-			<key>uid</key>
-			<string>B7351B97-011B-4FAE-B80E-0AAAD0584ACF</string>
-			<key>version</key>
-			<integer>1</integer>
-		</dict>
-		<dict>
-			<key>config</key>
-			<dict>
 				<key>autopaste</key>
 				<false/>
 				<key>clipboardtext</key>
@@ -244,18 +176,18 @@
 				<key>argumenttype</key>
 				<integer>0</integer>
 				<key>keyword</key>
-				<string>ant</string>
+				<string>syn</string>
 				<key>subtext</key>
 				<string></string>
 				<key>text</key>
-				<string>Find antonyms for "{query}"</string>
+				<string>Find synonyms for "{query}"</string>
 				<key>withspace</key>
 				<true/>
 			</dict>
 			<key>type</key>
 			<string>alfred.workflow.input.keyword</string>
 			<key>uid</key>
-			<string>D31BD41C-0A3A-4E10-A973-B5C5570A5272</string>
+			<string>BECD7A4B-8683-4A82-AD17-1F9723ECB487</string>
 			<key>version</key>
 			<integer>1</integer>
 		</dict>
@@ -283,7 +215,74 @@
 				<key>queuemode</key>
 				<integer>1</integer>
 				<key>runningsubtext</key>
+				<string>Fetching synonyms...</string>
+				<key>script</key>
+				<string>./words.py</string>
+				<key>scriptargtype</key>
+				<integer>1</integer>
+				<key>scriptfile</key>
 				<string></string>
+				<key>subtext</key>
+				<string></string>
+				<key>title</key>
+				<string></string>
+				<key>type</key>
+				<integer>0</integer>
+				<key>withspace</key>
+				<true/>
+			</dict>
+			<key>type</key>
+			<string>alfred.workflow.input.scriptfilter</string>
+			<key>uid</key>
+			<string>896BAE9B-3857-44CD-8386-AC44751E1758</string>
+			<key>version</key>
+			<integer>3</integer>
+		</dict>
+		<dict>
+			<key>config</key>
+			<dict>
+				<key>argument</key>
+				<string></string>
+				<key>passthroughargument</key>
+				<false/>
+				<key>variables</key>
+				<dict>
+					<key>word</key>
+					<string>{query}</string>
+				</dict>
+			</dict>
+			<key>type</key>
+			<string>alfred.workflow.utility.argument</string>
+			<key>uid</key>
+			<string>B7351B97-011B-4FAE-B80E-0AAAD0584ACF</string>
+			<key>version</key>
+			<integer>1</integer>
+		</dict>
+		<dict>
+			<key>config</key>
+			<dict>
+				<key>alfredfiltersresults</key>
+				<true/>
+				<key>alfredfiltersresultsmatchmode</key>
+				<integer>0</integer>
+				<key>argumenttreatemptyqueryasnil</key>
+				<true/>
+				<key>argumenttrimmode</key>
+				<integer>0</integer>
+				<key>argumenttype</key>
+				<integer>1</integer>
+				<key>escaping</key>
+				<integer>102</integer>
+				<key>queuedelaycustom</key>
+				<integer>3</integer>
+				<key>queuedelayimmediatelyinitially</key>
+				<true/>
+				<key>queuedelaymode</key>
+				<integer>0</integer>
+				<key>queuemode</key>
+				<integer>1</integer>
+				<key>runningsubtext</key>
+				<string>Fetching antonyms...</string>
 				<key>script</key>
 				<string>./words.py --queryType=ant</string>
 				<key>scriptargtype</key>
@@ -309,6 +308,27 @@
 		<dict>
 			<key>config</key>
 			<dict>
+				<key>argumenttype</key>
+				<integer>0</integer>
+				<key>keyword</key>
+				<string>ant</string>
+				<key>subtext</key>
+				<string></string>
+				<key>text</key>
+				<string>Find antonyms for "{query}"</string>
+				<key>withspace</key>
+				<true/>
+			</dict>
+			<key>type</key>
+			<string>alfred.workflow.input.keyword</string>
+			<key>uid</key>
+			<string>D31BD41C-0A3A-4E10-A973-B5C5570A5272</string>
+			<key>version</key>
+			<integer>1</integer>
+		</dict>
+		<dict>
+			<key>config</key>
+			<dict>
 				<key>argument</key>
 				<string></string>
 				<key>passthroughargument</key>
@@ -326,6 +346,21 @@
 			<key>version</key>
 			<integer>1</integer>
 		</dict>
+		<dict>
+			<key>config</key>
+			<dict>
+				<key>browser</key>
+				<string></string>
+				<key>searcher</key>
+				<integer>1635215215</integer>
+			</dict>
+			<key>type</key>
+			<string>alfred.workflow.action.systemwebsearch</string>
+			<key>uid</key>
+			<string>B6848C0D-806C-4F11-98AA-397EA74131B5</string>
+			<key>version</key>
+			<integer>1</integer>
+		</dict>
 	</array>
 	<key>readme</key>
 	<string></string>
@@ -334,9 +369,9 @@
 		<key>1AAE3365-9064-47D7-A95A-74332F64DBE8</key>
 		<dict>
 			<key>xpos</key>
-			<integer>255</integer>
+			<integer>245</integer>
 			<key>ypos</key>
-			<integer>235</integer>
+			<integer>355</integer>
 		</dict>
 		<key>3322AFCC-4DBF-4AAC-9184-89E74B831165</key>
 		<dict>
@@ -348,23 +383,30 @@
 		<key>896BAE9B-3857-44CD-8386-AC44751E1758</key>
 		<dict>
 			<key>xpos</key>
-			<integer>360</integer>
+			<integer>350</integer>
 			<key>ypos</key>
-			<integer>55</integer>
+			<integer>150</integer>
 		</dict>
 		<key>93006512-872A-416F-9B89-0753FA2DF615</key>
 		<dict>
 			<key>xpos</key>
-			<integer>360</integer>
+			<integer>350</integer>
 			<key>ypos</key>
-			<integer>205</integer>
+			<integer>325</integer>
+		</dict>
+		<key>B6848C0D-806C-4F11-98AA-397EA74131B5</key>
+		<dict>
+			<key>xpos</key>
+			<integer>590</integer>
+			<key>ypos</key>
+			<integer>360</integer>
 		</dict>
 		<key>B7351B97-011B-4FAE-B80E-0AAAD0584ACF</key>
 		<dict>
 			<key>xpos</key>
-			<integer>255</integer>
+			<integer>245</integer>
 			<key>ypos</key>
-			<integer>85</integer>
+			<integer>180</integer>
 		</dict>
 		<key>BD68FD59-B592-44BF-814D-F4D7AF09DC6D</key>
 		<dict>
@@ -376,16 +418,16 @@
 		<key>BECD7A4B-8683-4A82-AD17-1F9723ECB487</key>
 		<dict>
 			<key>xpos</key>
-			<integer>65</integer>
-			<key>ypos</key>
 			<integer>55</integer>
+			<key>ypos</key>
+			<integer>150</integer>
 		</dict>
 		<key>D31BD41C-0A3A-4E10-A973-B5C5570A5272</key>
 		<dict>
 			<key>xpos</key>
-			<integer>65</integer>
+			<integer>55</integer>
 			<key>ypos</key>
-			<integer>205</integer>
+			<integer>325</integer>
 		</dict>
 	</dict>
 	<key>webaddress</key>
