@@ -3,8 +3,9 @@
 </div>
 
 <p align="center">
-  <strong>Get synonyms and antonyms from thesaurus.com</strong></br>
-  <img src="./demo.png" width="530">
+  <strong>Find synonyms and antonyms from thesaurus.com</strong></br>
+  <img src="./assets/syn.png" width="530">
+  <img src="./assets/ant.png" width="530">
 </p>
 
 ## Installation
@@ -19,7 +20,7 @@
 
 ## Demo
 
-<img src="./demo.gif" width="600">
+<img src="./assets/demo.gif" width="600">
 
 ## More workflows
 
@@ -29,7 +30,7 @@
 - 🗝 [alfred-password-generator](https://github.com/epilande/alfred-password-generator) - Workflow to generate passwords.
 - 🎨 [alfred-prettier-clipboard](https://github.com/epilande/alfred-prettier-clipboard) - Format code in your clipboard with Prettier.
 - 🖊 [alfred-markdown](https://github.com/epilande/alfred-markdown) - Markdown text expander.
-- 💡 [alfred-govee](https://github.com/epilande/alfred-govee) - Workflow to interact with your Govee devices.
+<!-- - 💡 [alfred-govee](https://github.com/epilande/alfred-govee) - Workflow to interact with your Govee devices. -->
 
 ## License
 
