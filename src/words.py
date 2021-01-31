@@ -43,12 +43,13 @@ def fetchWords():
 
     items = list(map(lambda item: {
         "title": item,
+        "subtitle": f"Copy \"{item}\" to your clipboard",
         "arg": item
     }, antonyms if queryType == "ant" else synonyms))
 
     definitionItem = [{
         "title": definition,
-        "subtitle": f"📖 definition of \"{word}\"",
+        "subtitle": f"📖 definition of \"{word}\" - Copy \"{definition}\" to your clipboard",
         "arg": definition
     }]
 
